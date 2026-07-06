@@ -8,7 +8,7 @@ df = df.sort_values(by="date")
 app = Dash(__name__)
 
 app.layout = html.Div([
-    html.H1(['Pink Morsels Sales Dashboard']),
+    html.H1(['Pink Morsels Sales Dashboard'],id="app-header"),
 
     html.Div([
         html.Label("Select Region:", style={"fontWeight": "bold", "fontSize": "16px",'display': 'inline','margin-bottom':'20px'}),
